@@ -2,7 +2,6 @@ import st from "./nav.module.scss";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { FETCH_USER } from "../../redux/actions/user";
 import Logo from "@components/reusable/template/Logo";
 import { useRouter } from "next/router";
 import { SET_UX_VALUE } from "../../redux/reducers/ux";
@@ -16,15 +15,9 @@ import ProfileModal from "@components/nav/profileModal";
 
 export default function Nav({
   theme = "light",
-  noSearch, 
-  noCreateListing,
   customComponent = null,
   outsideApp = false,
-  noFilter,
   noProfile,
-  noRegion,
-  transparentNav,
-  darkBg,
 }) {
   const router = useRouter();
   const { isLoggedIn } = useSelector((state: RootState) => state.storage);
@@ -79,17 +72,27 @@ export default function Nav({
           {outsideApp ? (
             <div className={st.nav}>
               <Link href={"/"} passHref>
-               
-                <div className={st.dropbtn}> <p className={st.navText}>{"Home"}</p></div>
+                <div className={st.dropbtn}>
+                  {" "}
+                  <p className={st.navText}>{"Home"}</p>
+                </div>
               </Link>
               <Link href={"/about"} passHref>
-                <div className={st.dropbtn}><p className={st.navText}>{"About Us"}</p></div>
+                <div className={st.dropbtn}>
+                  <p className={st.navText}>{"About Us"}</p>
+                </div>
               </Link>
 
               <Link href={"/contact"} passHref>
-                <div className={st.dropbtn}><p className={st.navText}>{"Contact Us"}</p></div>
+                <div className={st.dropbtn}>
+                  <p className={st.navText}>{"Contact Us"}</p>
+                </div>
               </Link>
-              
+              <Link href={"/app"} passHref>
+                <div className={st.dropbtn}>
+                  <p className={st.navText}>{"App"}</p>
+                </div>
+              </Link>
             </div>
           ) : null}
           {noProfile ? null : (
@@ -146,7 +149,6 @@ export default function Nav({
           )}
         </div>
       </div>
-    
     </React.Fragment>
   );
 }

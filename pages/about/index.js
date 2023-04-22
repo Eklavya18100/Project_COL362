@@ -12,28 +12,28 @@ export default function About() {
 
   const wwo = [
     {
-      title1: "1.Home design ",
-      title2: "professionals",
-      desc: "We provide access to a vast database of home design professionals, including architects, interior designers, and contractors, which can help homeowners find the right professionals for their home renovation projects.",
+      title1: "1.Our Mission ",
+      title2: "Helping Families Build a Brighter Future",
+      desc: "Whether you're looking to save for your child's education, protect your loved ones with life insurance, or navigate the complex process of college admissions, we're here to help every step of the way.",
       img: "/about/worker.png",
     },
     {
-      title1: "2.Communication ",
-      title2: "tools",
-      desc: "From education savings, retirement planning, life protection to wealth inherited.",
+      title1: "2.Our ",
+      title2: "Story",
+      desc: "We are committed to providing personalized, compassionate, and ethical services that meet the unique needs of each and every client. We are dedicated to building long-term relationships based on trust, transparency, and mutual respect.",
       img: "/about/about2.svg",
     },
     {
-      title1: "3.Inspirational ",
-      title2: "design ideas",
-      desc: "Users can create ideabooks on proVis to save and organize their favorite design ideas, photos, and articles.",
+      title1: "3.Our ",
+      title2: "team",
+      desc: "Our team of professionals brings a wealth of experience and expertise to the table, with a deep understanding of the financial and educational challenges facing families today. We are passionate about helping our clients achieve their goals, and we work tirelessly to stay up-to-date on the latest industry trends, tools, and strategies.",
       img: "/about/hand.png",
     },
   
     {
       title1: "4.Mobile ",
       title2: "app",
-      desc: "proVis has a mobile app that allows users to access all the platform's features on the go.",
+      desc: "iProtect has a mobile app that allows users to access all the platform's features on the go.",
       img: "/about/booking.png",
     },
   ];
@@ -46,13 +46,13 @@ export default function About() {
         <div className={st.circle} />
         <div className={st.largeHeader} highlightword="Let's">
           {" "}
-          design our house
+          design your future
         </div>
         <div className={st.smallHeader}>
-        proVis is an online platform that offers a wide range of services related to home design and renovation.We provide a comprehensive platform for homeowners and design professionals, offering a wide range of tools and resources that can help simplify the home renovation process.
+        iProtect is an online platform that offers a wide range of services. From child savings and life insurance to college admissions and financial aid consulting, we provide comprehensive, customizable solutions that are tailored to meet the unique needs and goals of each client.
         </div>
         <div className={st.contactUs}>
-          <p>Contact Us</p>
+          <p>About Us</p>
           <VscChevronDown size={"100px"} />
         </div>
       </div>

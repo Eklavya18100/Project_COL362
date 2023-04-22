@@ -10,7 +10,7 @@ export default function Navbar() {
             <nav className={st.navbar}>
                 
                 <img src = "/product_pg/logo.jpg" className={st.nav_img1} /> 
-                <div className={st.nav_text}>proVis</div>
+                <div className={st.nav_text}>iProtect</div>
                 <img src = {"/product_pg/Search_duotone_line.png"} className={st.nav_img2} /> 
                 <img src = {"/product_pg/User_box_duotone_line.png"}  className={st.nav_img3} /> 
                 <h3 >

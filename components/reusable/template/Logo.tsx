@@ -3,8 +3,8 @@ export default function Logo({ height }) {
   return (
     <img
       style={{ height: height }}
-      alt={"proVis Logo"}
-      src={"/navbar/proVis_logo.jpg"}
+      alt={"iProtect Logo"}
+      src={"/iprotect_logo.png"}
     />
   );
 }

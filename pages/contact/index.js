@@ -6,12 +6,12 @@ export default function Contact() {
   const contactData = [
     {
       imgUrl: "/contact/location.png",
-      desc: "22, Cornwall Street, Downtown LA, New jersey, Washington, NY ",
+      desc: "123, ABC Street, New Colony, Gurgaon, Haryana 122001, India.",
       type: "address",
     },
     {
       imgUrl: "/contact/email.png",
-      desc: "info@proVis.in",
+      desc: "info@iProtect.in",
       type: "email",
     },
     {
@@ -25,7 +25,7 @@ export default function Contact() {
     <PageTemplate outsideApp>
       <div className={st.mainContainer}>
         <div>
-          <h1>Contact proVis</h1>
+          <h1>Contact iProtect</h1>
           <p>Let's discuss how we can help you!</p>
         </div>
         <div>
